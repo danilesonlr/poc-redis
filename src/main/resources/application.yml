@@ -1,0 +1,25 @@
+spring:
+
+  #SPRING DATA
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    generate-ddl: true
+
+  application:
+    name: poc-redis
+  #Redis
+  data:
+    redis:
+      url: redis://localhost:6379
+
+  #CONFIG SWAGGER
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+
+
+
